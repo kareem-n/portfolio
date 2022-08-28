@@ -1,0 +1,438 @@
+:root {
+  --bg-main-color: #291637;
+  --bg-nav-color: #0b465f;
+}
+body {
+  background-color: var(--bg-main-color);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background-color: var(--bg-nav-color);
+}
+.navbar-brand {
+  font-size: 1.6rem;
+  font-family: "Silkscreen", cursive;
+}
+.nav-link {
+  padding: 7px 20px !important;
+  border-radius: 200px !important;
+}
+.nav-link:hover {
+  color: #fec260 !important;
+}
+.nav-link.active {
+  background-color: #247881;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255) !important;
+}
+/*  */
+#home {
+  background-color: var(--bg-nav-color);
+}
+#home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .container h1 {
+  font-family: "Silkscreen", cursive;
+  letter-spacing: 5px;
+  position: relative;
+  padding: 25px;
+}
+#home .container h1::after,
+#home .container h1::before,
+#home .container h1 span::after,
+#home .container h1 span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+}
+#home .container h1::before {
+  width: 2px;
+  height: 50px;
+}
+#home .container h1 span::after {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+}
+#home .container h1 span::before {
+  left: auto;
+  top: auto;
+  bottom: 0;
+  width: 2px;
+  height: 50px;
+  right: 0;
+}
+
+.home .row .text {
+  padding: 48px 0px;
+}
+.home .row .blur {
+  filter: blur(100px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+.home .row .content {
+  height: 100%;
+  border-radius: 11px;
+  padding: 48px 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.looking {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.ppp {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(187, 187, 187);
+}
+.cursor {
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 50px rgb(0, 221, 255);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  display: none;
+}
+.lets {
+  background-color: #07506f;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 600;
+  padding: 7px 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+.lets:hover {
+  color: #fff;
+  animation: btn 0.1s infinite alternate ease;
+}
+
+@keyframes btn {
+  0% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
+/*  */
+
+.brd {
+  background-color: #07506f;
+}
+.brd h3 {
+  color: rgb(205, 205, 205);
+  letter-spacing: 2px;
+  font-weight: 900;
+  animation: title 8s infinite linear;
+}
+@keyframes title {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px rgb(244, 244, 244), 0 0 20px rgb(244, 244, 244),
+      0 0 30px rgb(129, 15, 181), 0 0 40px rgb(133, 7, 131),
+      0 0 80px rgb(129, 15, 181);
+  }
+  5%,
+  40% {
+    color: rgb(179, 179, 179);
+    text-shadow: none;
+  }
+}
+.about .row .bdg {
+  background: linear-gradient(45deg, #0d96d1, #8a13df, rgb(0, 255, 132));
+  background-size: 200% 300%;
+  background-position: top right;
+  animation: back 3s infinite alternate;
+  border-right: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .row .bdg1 {
+  background: linear-gradient(45deg, #d10d86, #8a13df, rgb(225, 10, 10));
+  background-size: 200% 300%;
+  background-position: top right;
+}
+.about .row .bdg h5 {
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  font-family: "Silkscreen", cursive;
+}
+.about .row .progresss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .row .progresss svg {
+  position: relative;
+  z-index: -1;
+}
+.about .row .progresss svg circle {
+  transform: translate(5px, 5px);
+  fill: none;
+  stroke-width: 10px;
+}
+.poo {
+  z-index: 99;
+}
+.about .row .progresss svg .c1 {
+  stroke: rgb(124, 124, 124);
+  stroke-dasharray: 0;
+}
+.about .row .progresss svg .c2 {
+  stroke: #720b82;
+  stroke-dasharray: 290;
+  /* stroke-dashoffset: 90; */
+}
+.pro2 .c2 {
+  stroke-dasharray: 280 !important ;
+}
+.pro3 .c2 {
+  stroke-dasharray: 270 !important ;
+}
+.pro4 .c2 {
+  stroke-dasharray: 250 !important ;
+}
+.pro5 .c2 {
+  stroke-dasharray: 270 !important ;
+}
+.progress2 span {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background-color: #720b82;
+}
+.progress2 .inactive {
+  background-color: #3d0846;
+}
+#line {
+  background: linear-gradient(45deg, #0d96d1, #8a13df, rgb(0, 255, 132));
+  background-size: 200% 300%;
+  background-position: top right;
+  animation: back 3s infinite alternate;
+  border-radius: 5px;
+  position: relative;
+  border-right: 3px solid #fff;
+}
+@keyframes back {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: bottom left;
+  }
+}
+#projects .row .card {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#projects .row .card .top-img .overlay {
+  background-color: rgba(149, 0, 255, 0.348);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+#projects .row .card .top-img span {
+  display: block;
+  position: absolute;
+  font-size: 3rem;
+  font-family: "Silkscreen", cursive;
+  z-index: 99;
+  top: 0%;
+  left: 0;
+  opacity: 1;
+  transition: 0.3s 0.1s;
+}
+
+#projects .row .card .top-img .overlay i {
+  font-size: 30px;
+}
+#projects .row img {
+  transition: 0.5s;
+}
+#projects .row .card:hover img {
+  transform: scale(1.2, 1.2);
+}
+#projects .row .card .top-img .overlay i:hover {
+  color: #0baff5;
+}
+#projects .row .card .text {
+  background: linear-gradient(45deg, #0d96d1, #8a13df, rgb(0, 87, 45));
+  background-size: 200% 300%;
+  background-position: top right;
+  animation: back 3s infinite alternate;
+  max-height: 0px;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 1;
+}
+#projects .row .card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 101%;
+  top: -1%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.805);
+  filter: blur(2px);
+  z-index: -1;
+  opacity: 0;
+  visibility: visible;
+}
+
+#projects .row .card:hover .text {
+  max-height: 400px;
+}
+.card:hover .overlay {
+  opacity: 1 !important;
+}
+#projects .card .text a {
+  display: inline-block;
+  background-color: #07506f;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition-delay: 0.1s;
+}
+#projects .card .text .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+#projects .card .text a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 105%;
+  height: 105%;
+  background: linear-gradient(45deg, rgb(0, 21, 255), rgb(111, 0, 255));
+  border: none;
+  transition: 0.4s;
+  z-index: -1;
+}
+#projects .card .text a:hover {
+  color: #fff;
+}
+#projects .card .text a:hover::after {
+  left: 0;
+}
+
+.contact .text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+.social a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 5px;
+  position: relative;
+}
+.social a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.social a:hover::after{
+  display: block;
+}
+.social a:hover{
+  color: rgb(22, 164, 157);
+  transform: scale(1.2 , 1);
+}
+
+
+.up {
+  width: 40px;
+  height: 40px;
+  background-color: #07506f;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  right: 2%;
+  bottom: 10%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.up:hover {
+  background-color: #0d8fc7;
+}
+
+.links{
+  width: 50px ;
+  height: 150px ;
+  background-color: #07506f;
+  position: fixed;
+  bottom: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  left: -45px;
+  transition: left 0.3s;
+}
+.links .fas{
+  cursor: pointer;
+  font-size: 17px;
+}
+.links .fas:hover{
+  color: #fec260;
+}
+.links a{
+  font-size: 18px;
+  color: #fff;
+}
+.links a:hover{
+  color:#fec260 ;
+  cursor: pointer;
+}
+

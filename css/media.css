@@ -1,0 +1,31 @@
+@media screen and (min-width:0px) and (max-width:576px ) {
+  header .container::after{
+    font-size: 2rem;
+  }
+  #projects .row .card .text{
+    max-height: 400px !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width:768px ) { 
+  #projects .row .card .text{
+    max-height: 400px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:992px ) { 
+  #projects .row .card .text{
+    max-height: 400px !important;
+  }
+}
+
+@media (min-width: 992px) { 
+  
+}
+
+@media (min-width: 1200px) { 
+  
+}
+
+@media (min-width: 1400px) { 
+  
+}
