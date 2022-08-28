@@ -226,9 +226,11 @@ body {
   width: 25px;
   height: 3px;
   background-color: #720b82;
+  box-shadow: 0 0 20px #720b82;
 }
 .progress2 .inactive {
-  background-color: #3d0846;
+  background-color: #510b5e;
+  box-shadow: none;
 }
 #line {
   background: linear-gradient(45deg, #0d96d1, #8a13df, rgb(0, 255, 132));
@@ -396,7 +398,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
-  z-index: 9999;
+  z-index: 999999;
   right: 2%;
   bottom: 10%;
   display: none;
@@ -419,6 +421,7 @@ body {
   flex-direction: column;
   left: -45px;
   transition: left 0.3s;
+  z-index: 9999;
 }
 .links .fas{
   cursor: pointer;

@@ -5,6 +5,12 @@
   #projects .row .card .text{
     max-height: 400px !important;
   }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .progress2{
+    align-items: center !important;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width:768px ) { 
