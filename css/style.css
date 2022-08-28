@@ -312,7 +312,7 @@ body {
   opacity: 0;
   visibility: visible;
 }
-
+ 
 #projects .row .card:hover .text {
   max-height: 400px;
 }
