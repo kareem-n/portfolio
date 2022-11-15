@@ -51,20 +51,14 @@ $(window).scroll(function () {
   }
 });
 
-$("#projects .card").mouseenter(function (e) {
-  console.log($(e.target).parent().siblings().children());
-});
-
 $("#btnUp").click(function (e) {
   $(window).scrollTop(0) ; 
 });
 
 $('.links .fas').click(function (e) { 
   if ($('.links').css('left') < '0px') {
-    console.log(0);
     $('.links').css('left' , '0px') ;
   }else{
-    console.log(1);
     $('.links').css('left' , '-45px') ;
   }
   
