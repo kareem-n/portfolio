@@ -265,6 +265,25 @@ body {
   opacity: 0;
   transition: 0.4s;
 }
+
+#projects .row .card .top-img::after {
+  content: "HOVER ME";
+  position: absolute;
+  top: 30px;
+  right: -40px;
+  width: 150px;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #07506f;
+  font-family: "Silkscreen", cursive;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 #projects .row .card .top-img span {
   display: block;
   position: absolute;
